@@ -18,6 +18,7 @@ images = [img, img2,img3];
 function draw() {
     background(220);
     image(images[index%images.length], 0, 0);
+    circle(100, 100, 30);
 }
 
 function keyPressed(){ 
