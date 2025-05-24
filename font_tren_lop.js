@@ -22,7 +22,7 @@ function draw(){
     fill(255, 100, 0);
     for (let i1=0; i1<points.length; i1=i1+7) {
         let distance1 = dist(mouseX, mouseY,points[i1].x, points[i1].y);
-        let size1 = map(distance1, 0, 400, 30, 5);
+        let size1 = map(distance1, 0, 200, 30, 5);
 if (size1<10) {
     size1=0;
 }
@@ -34,7 +34,7 @@ if (size1<10) {
 fill(255, 200, 0);
 for (let i2=0; i2<points.length; i2=i2+5) {
     let distance2 = dist(mouseX, mouseY,points[i2].x, points[i2].y);
-    let size2 = map(distance2, 600, 0, 30, 0);
+    let size2 = map(distance2, 600, 0, 50, 0);
 if (size2<0) {
 size2=0;
 }
@@ -46,7 +46,7 @@ size2=0;
 fill(255, 255, 255);
 for (let i3=0; i3<points.length; i3=i3+5) {
     let distance3 = dist(mouseX, mouseY,points[i3].x, points[i3].y);
-    let size3 = map(distance3, 0, 100, 15, 0);
+    let size3 = map(distance3, 0, 100, 20, 0);
 if (size3<0) {
 size3=0;
 }
